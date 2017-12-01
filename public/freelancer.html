@@ -1,8 +1,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="https://trello.com/power-ups/power-up.css">
-    <link rel="stylesheet"
-          href="node_modules/material-components-web/dist/material-components-web.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">g
     <script src="https://trello.com/power-ups/power-up.min.js"></script>
   </head>
   <body>
@@ -28,13 +27,23 @@
       Budget: <input type="text" name="budget">
       <button type="submit" class="mod-primary">Post Job</button>
     </form>
-<div class="mdc-card__horizontal-block">
-  <section class="mdc-card__primary">
-    <h1 class="mdc-card__title mdc-card__title--large">Title here</h1>
-    <h2 class="mdc-card__subtitle">Subtitle here</h2>
-  </section>
-  <img class="mdc-card__media-item mdc-card__media-item--1x" src="image.jpg">
-</div>
+    <div class="col s12 m7">
+       <h2 class="header">Horizontal Card</h2>
+       <div class="card horizontal">
+         <div class="card-image">
+           <img src="https://lorempixel.com/100/190/nature/6">
+         </div>
+         <div class="card-stacked">
+            <span class="card-title">John Doe</span>
+           <div class="card-content">
+             <p>I am a very simple card. I am good at containing small bits of information.</p>
+           </div>
+           <div class="card-action">
+             <a href="#">Profile</a>
+           </div>
+         </div>
+       </div>
+     </div>
     <script src="./js/freelancer.js"></script>
   </body>
 </html>
