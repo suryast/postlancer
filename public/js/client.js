@@ -45,10 +45,10 @@ var getBadge = function(t, detail) {
 // We need to call initialize to get all of our capability handles set up and registered with Trello
 TrelloPowerUp.initialize({
   'card-badges': function (t, opts) {
-    return t.card('labels')
-    .get('labels')
-    .then(function(cardLabels){
-      console.log('We just loaded the card name for fun: ' + cardLabels);
+    return t.card('all')
+    .get('all')
+    .then(function(card){
+      console.log(JSON.stringify(card, null, 2));
       return [{
         // dynamic badges can have their function rerun
         // after a set number of seconds defined by refresh.
