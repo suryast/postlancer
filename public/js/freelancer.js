@@ -14,7 +14,7 @@ var settings = {
 }
 
 window.estimate.addEventListener('submit', function(event){
-  $.ajax(settings).done(function (response) {
+  jQuery.ajax(settings).done(function (response) {
     console.log(response);
   });
 });
