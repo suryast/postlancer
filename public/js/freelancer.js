@@ -13,7 +13,7 @@ var options = { method: 'POST',
      'freelancer-oauth-v1': 'vOmqi4FNxRFBRK7bdTkCq7JRZDKRpo',
      'content-type': 'application/json' },
   body: 
-   { title: 'Write travel article 2nd',
+   { title: 'Write travel article',
      description: 'Help me write December article',
      currency: { code: 'AUD', id: 3, sign: '$' },
      budget: { minimum: 500 },
@@ -25,8 +25,5 @@ window.estimate.addEventListener('submit', function(event){
     if (error) throw new Error(error);
 
     console.log(body);
-  });
-  .then(function(){
-    t.closePopup();
   });
 });
