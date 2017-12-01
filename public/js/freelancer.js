@@ -7,7 +7,7 @@ var myJSONObject =    {
      currency: { code: 'AUD', id: 3, sign: '$' },
      budget: { minimum: 500 },
      jobs: [ { id: 2 }, { id: 174 } ] 
-},
+};
 
 window.estimate.addEventListener('submit', function(event){
   request({ method: 'POST',
