@@ -45,8 +45,8 @@ var getBadge = function(t, detail) {
 // We need to call initialize to get all of our capability handles set up and registered with Trello
 TrelloPowerUp.initialize({
   'card-badges': function (t, opts) {
-    return t.card('label')
-    .get('label')
+    return t.card('name')
+    .get('name')
     .then(function(cardName){
       console.log('We just loaded the card name for fun: ' + cardName);
       return [{
