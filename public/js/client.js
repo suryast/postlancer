@@ -45,28 +45,25 @@ var getBadge = function(t, detail) {
 // We need to call initialize to get all of our capability handles set up and registered with Trello
 TrelloPowerUp.initialize({
   'card-badges': function (t, opts) {
-    return t.list('Published')
+    return t.card('name')
+    .get('name')
     .then(function(cardName){
-      return t.card('name')
-      .get('name')
-      .then(function(cardName){
-        console.log('We just loaded the card name for fun: ' + cardName);
-        return [{
-          // dynamic badges can have their function rerun
-          // after a set number of seconds defined by refresh.
-          // Minimum of 10 seconds.
-          dynamic: function(){
-            // we could also return a Promise that resolves to
-            // this as well if we needed to do something async first
-            return {
-              text: (Math.random() * 100).toFixed(0).toString() + ' bids',
-              icon: 'https://res.cloudinary.com/suryast/image/upload/v1512127819/headset_man_bpf2ux.svg',
-              color: 'blue',
-              refresh: 10 // in seconds
-            };
-          }
-        }];
-      });
+      console.log('We just loaded the card name for fun: ' + cardName);
+      return [{
+        // dynamic badges can have their function rerun
+        // after a set number of seconds defined by refresh.
+        // Minimum of 10 seconds.
+        dynamic: function(){
+          // we could also return a Promise that resolves to
+          // this as well if we needed to do something async first
+          return {
+            text: (Math.random() * 100).toFixed(0).toString() + ' bids',
+            icon: 'https://res.cloudinary.com/suryast/image/upload/v1512127819/headset_man_bpf2ux.svg',
+            color: 'blue',
+            refresh: 10 // in seconds
+          };
+        }
+      }];
     });
   },
   'card-buttons': function(t, opts) {
