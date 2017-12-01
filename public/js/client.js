@@ -45,10 +45,10 @@ var getBadge = function(t, detail) {
 // We need to call initialize to get all of our capability handles set up and registered with Trello
 TrelloPowerUp.initialize({
   'card-badges': function (t, opts) {
-    return t.card('name')
-    .get('name')
-    .then(function(cardName){
-      console.log('We just loaded the card name for fun: ' + cardName);
+    return t.card('label')
+    .get('label')
+    .then(function(cardLabel){
+      console.log('We just loaded the card name for fun: ' + cardLabel);
       return [{
         // dynamic badges can have their function rerun
         // after a set number of seconds defined by refresh.
@@ -103,14 +103,6 @@ TrelloPowerUp.initialize({
         height: 411 // initial height of popup window
       });
     };
-    return getBadge(t, true)
-    .then(function(badges){
-      if (badges && badges.length === 1 && editable) {
-        // add callback if editable
-        badges[0].callback = clickCallback;
-      }
-      return badges;
-    })
     .catch(function(){
       return [];
     });
