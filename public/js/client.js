@@ -67,7 +67,7 @@ TrelloPowerUp.initialize({
           } else {
             return context.popup({
               title: 'Change Snooze Time',
-              url: './set-snooze.html',
+              url: './freelancer.html',
               height: 411
             });
           }
