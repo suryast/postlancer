@@ -1,8 +1,5 @@
 /* global TrelloPowerUp */
-
-var t = TrelloPowerUp.iframe();
-
-var request = require("request");
+var request = require("request-promise");
 
 var options = { method: 'POST',
   url: 'https://www.freelancer-sandbox.com/api/projects/0.1/projects/',
