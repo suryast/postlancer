@@ -59,16 +59,10 @@ TrelloPowerUp.initialize({
           return {
             text: 'Dynamic ' + (Math.random() * 100).toFixed(0).toString(),
             icon: './images/icon.svg',
-            color: 'green',
+            color: 'blue',
             refresh: 10 // in seconds
           };
         }
-      }, {
-        // its best to use static badges unless you need your
-        // badges to refresh you can mix and match between
-        // static and dynamic
-        text: 'Static',
-        color: null
       }];
     });
   },
