@@ -103,8 +103,5 @@ TrelloPowerUp.initialize({
         height: 411 // initial height of popup window
       });
     };
-    .catch(function(){
-      return [];
-    });
   }
 });
