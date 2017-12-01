@@ -6,23 +6,6 @@ Promise = require('bluebird');
 
 const trelloApi = 'https://api.trello.com/1';
 
-// Small helper to call Trello API to archive/unarchive a card
-const updateCardClosed = Promise.coroutine(function* (cardId, token, closed){
-  const apiReq = {
-    uri: `${trelloApi}/cards/${cardId}/closed`,
-    qs: { value: closed, key: process.env.APP_KEY, token: token },
-    json: true
-  };
-  let response;
-  try {
-    response = yield rp.put(apiReq);
-  } catch (apiErr) {
-    console.error(`Error updating card closed status. cardId=${cardId} error=${apiErr.message}`);
-    return false;
-  }
-  return true;
-})
-  
 const routes = (app) => {
   // Add route handler for creating and updating card snoozes
   app.post('/snooze', Promise.coroutine(function* (req, res) {

@@ -1,7 +1,7 @@
 {
-  "name": "Card-Snooze-Power-Up",
+  "name": "Powerlancer",
   "version": "1.0.0",
-  "description": "A Trello Power-Up that allows you to snooze (archive) cards and have them returned to the board at a specified time.",
+  "description": "A Trello Power-Up that allows you to outsource tasks from your cards directly to Freelancer.com.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"

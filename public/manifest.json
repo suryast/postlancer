@@ -1,15 +1,16 @@
 {
-  "name": "A Card Snooze",
-  "details":"The Card Snooze Power-Up allows you to snooze (archive) a card until a certain time, when it will be restored to the board.",
+  "name": "Powerlancer",
+  "details":"The Card Snooze Power-Up allows you to outsource tasks from your cards directly to Freelancer.com.",
   "icon": {
-    "url": "https://cdn.glitch.com/07656aca-9ccd-4ad1-823c-dbd039f7fccc%2Fzzz.svg"
+    "url": "https://cdn.hyperdev.com/us-east-1%3A3d31b21c-01a0-4da2-8827-4bc6e88b7618%2Fhyperdev.svg?1473990736575"
   },
-  "author": "Gomix",
+  "author": "suryast",
   "capabilities": [
     "callback",
     "card-badges",
     "card-buttons",
-    "card-detail-badges"
+    "card-detail-badges",
+    "attachment-sections"
   ],
   "connectors": {
     "iframe": {
