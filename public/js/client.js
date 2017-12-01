@@ -55,8 +55,8 @@ TrelloPowerUp.initialize({
     return t.get('member', 'private', 'token')
     .then(function(token){
       return [{
-        icon: 'https://cdn.hyperdev.com/07656aca-9ccd-4ad1-823c-dbd039f7fccc%2Fzzz-grey.svg',
-        text: 'Snooze',
+        icon: 'https://cdn.hyperdev.com/us-east-1%3A3d31b21c-01a0-4da2-8827-4bc6e88b7618%2Fhyperdev.svg?1473990736575',
+        text: 'Outsource',
         callback: function(context) {
           if (!token) {
             context.popup({
@@ -79,7 +79,7 @@ TrelloPowerUp.initialize({
     var editable = opts.context.permissions.board === 'write';
     var clickCallback = function(context){
       return context.popup({
-        title: 'Change Snooze Time',
+        title: 'Change this text',
         url: './set-snooze.html',
         height: 411 // initial height of popup window
       });
