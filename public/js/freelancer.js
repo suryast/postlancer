@@ -13,8 +13,8 @@ var settings = {
   "data": "{\n  \"title\": \"Write trvel article\",\n  \"description\": \"Help me write December article\",\n  \"currency\": {\n        \"code\": \"AUD\",\n        \"id\": 3,\n        \"sign\": \"$\"\n    },\n    \"budget\": {\n        \"minimum\": 500\n    },\n    \"jobs\": [\n        {\n          \"id\": 2\n        },\n        {\n          \"id\": 174\n        }\n    ]\n}"
 }
 
-window.estimate.addEventListener('submit', function(event){
-  jQuery.ajax(settings).done(function (response) {
+$("button").click(function(){
+  $.ajax(settings).done(function (response) {
     console.log(response);
   });
 });
