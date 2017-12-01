@@ -79,8 +79,8 @@ TrelloPowerUp.initialize({
     var editable = opts.context.permissions.board === 'write';
     var clickCallback = function(context){
       return context.popup({
-        title: 'Change this text',
-        url: './set-snooze.html',
+        title: 'Postlancer',
+        url: './freelancer.html',
         height: 411 // initial height of popup window
       });
     };
