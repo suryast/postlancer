@@ -58,7 +58,7 @@ TrelloPowerUp.initialize({
           // this as well if we needed to do something async first
           return {
             text: (Math.random() * 100).toFixed(0).toString() + ' bids',
-            icon: './images/headset_man.svg',
+            icon: 'https://res.cloudinary.com/suryast/image/upload/v1512127819/headset_man_bpf2ux.svg',
             color: 'blue',
             refresh: 10 // in seconds
           };
