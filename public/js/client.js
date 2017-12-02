@@ -74,7 +74,7 @@ TrelloPowerUp.initialize({
     .then(function(token){
       return [{
         icon: 'https://cdn.hyperdev.com/us-east-1%3A3d31b21c-01a0-4da2-8827-4bc6e88b7618%2Fhyperdev.svg?1473990736575',
-        text: 'Postlancer',
+        text: 'Powerlancer',
         callback: function(context) {
           if (!token) {
             context.popup({
